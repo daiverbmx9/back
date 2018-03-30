@@ -1,7 +1,0 @@
-1 - Tener instalada la última versión de xampp.
-2 - Tener instalado composer.
-3 - Clonar el repositorio en "c:/xampp/htdocs/task-list/".
-4 - Dentro de la carpeta del repositorio "back", ejecutar el comando "composer install".
-5 - crear una base de datos nueva en phpmyadmin
-6 - importar a la base de datos el archivo database.sql (viene en la carpeta del repositorio)
-8 - iniciar apache y mysql
