@@ -1,7 +1,6 @@
 1 - Tener instalada la última versión de xampp.
-2 - Tener instalado Laravel (En esté proyecto se uso la última versión).
-3 - Clonar el repositorio en "c:/xampp/htdocs/task-list/".
-4 - Dentro de la carpeta del repositorio "back", ejecutar el comando "composer install".
-5 - crear una base de datos nueva en phpmyadmin
-6 - importar a la base de datos el archivo database.sql (viene en la carpeta del repositorio)
-7 - iniciar apache y mysql
+2 - Clonar el repositorio en "c:/xampp/htdocs/task-list/".
+3 - Dentro de la carpeta del repositorio "back", ejecutar el comando "composer install".
+4 - crear una base de datos nueva en phpmyadmin
+5 - importar a la base de datos el archivo database.sql (viene en la carpeta del repositorio)
+6 - iniciar apache y mysql
