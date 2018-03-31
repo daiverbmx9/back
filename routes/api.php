@@ -22,7 +22,9 @@ use Illuminate\Http\Request;
 Route::post('login', 'UsersController@login');
 
 Route::post('users','UsersController@store');
- 
+
+Route::get('tasks/{user_id}','TasksController@getTasks');
+
 Route::post('tasks','TasksController@store');
  
 Route::put('tasks/{id}','TasksController@update');

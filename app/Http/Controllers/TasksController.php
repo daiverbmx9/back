@@ -8,6 +8,28 @@ use App\Models\Task;
 class TasksController extends Controller
 {
 
+
+    /*
+     * Author:          Daieber Gonzalez.
+     * Description:     This method is used for get all task associates witch the user
+     */
+    public function getTasks($user_id)
+    {
+        $task = new Task();
+        $tasks = $task->allAndState($user_id);
+
+        if ($tasks)
+        {
+            return response()->json(
+            [
+                'tasks' => $tasks,
+                'status' => 200
+            ], 200);
+        }
+
+        return response()->json(['status' => 204]);
+    }
+
     /*
      * Author:			Daiber Gonzalez.
      * Description:		This method is used for save a task into the database.
@@ -15,7 +37,12 @@ class TasksController extends Controller
     public function store(Request $request)
     {
     	$task = Task::create($request->all());
-    	return response()->json($task, 201);
+    	
+        return response()->json(
+        [
+            'task' => $task,
+            'status' => 201
+        ], 201);
     }
 
     /*
@@ -29,9 +56,15 @@ class TasksController extends Controller
     	if ($task)
     	{
     		$task->update($request->all());
+
+            return response()->json(
+            [
+                'task' => $task,
+                'status' => 200
+            ], 200);
     	}
 
-    	return response()->json($task, 200);
+    	return response()->json(['status' => 204]);
     }
 
     /*
@@ -45,8 +78,9 @@ class TasksController extends Controller
         if ($task)
         {
         	$task->delete();
+            return response()->json(['status' => 200]);
         }
 
-        return response()->json(null, 204);
+        return response()->json(['status' => 204]);
     }
 }

@@ -24,12 +24,9 @@ class UsersController extends Controller
     	{
     		if ($password == $user->password)
     		{
-    			$task = new Task();
-                $tasks = $task->allAndState($user->id);
     			return response()->json(
     			[
     				'user' => $user,
-    				'tasks' => $tasks,
     				'status' => 200
     			], 200);
     		}
