@@ -15,3 +15,6 @@ Pasos a seguir para que funcione la API.
     (dicho archivo se encuentra en la raiz del proyecto).
     
 6 - Para su correcto funcionamiento, tener apache corriendo por el puerto 80.
+
+# NOTA:
+El proyecto local esta en dentro de una carpeta llamada "task-list", por eso la parte front-end consume una url como la siguiente "http://localhost/task-list/back/public/api/".
