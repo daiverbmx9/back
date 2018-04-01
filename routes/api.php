@@ -17,11 +17,13 @@ use Illuminate\Http\Request;
     return $request->user();
 });*/
 
-// List of routes for task-list app (user and task)
+// List of routes for task-list app (user, states and task)
 
 Route::post('login', 'UsersController@login');
 
 Route::post('users','UsersController@store');
+
+Route::get('states','StatesController@getAll');
 
 Route::get('tasks/{user_id}','TasksController@getTasks');
 
