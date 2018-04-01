@@ -1,7 +1,7 @@
 # back
 Este proyecto es parte de una prueba técnica para e-volution.
 
-Pasos a seguir para que funciona la API.
+Pasos a seguir para que funcione la API.
 
 1 - Tener apache(con php >= 7) y mysql (puede ser la última versión de xampp o wamp).
 
@@ -11,7 +11,7 @@ Pasos a seguir para que funciona la API.
 
 4 - Dentro del proyecto ejecutar el comando "composer install".
 
-5 - en phpmyadmin crear una base de datos llamada "task-list", e importar el archivo database.sql 
+5 - en phpmyadmin crear una base de datos llamada "task-list", e importar el archivo "task-list.sql"
     (dicho archivo se encuentra en la raiz del proyecto).
     
 6 - Para su correcto funcionamiento, tener apache corriendo por el puerto 80.
